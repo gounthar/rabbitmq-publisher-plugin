@@ -87,7 +87,7 @@ public class UtilsTest {
         String jsonMessage = Utils.getJsonMessage(buildParameters, message);
 
         // assertions
-        Assertions.assertThat(jsonMessage).isEqualTo("{\"field1\":\"test\",\"field2\":\"VALUE_1\",\"field3\":\"value_2\",\"fieldEmpty\":\"\",\"fieldNull\":null}");
+        Assertions.assertThat(jsonMessage).isEqualTo("{\"field1\":\"test\",\"field2\":\"VALUE_1\",\"field3\":\"value_2\",\"fieldEmpty\":\"\",\"fieldNull\":\"null\"}");
     }
 
 }
