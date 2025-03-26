@@ -52,7 +52,6 @@ import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 
 // cf example https://github.com/jenkinsci/hello-world-plugin
-@SuppressFBWarnings({"WeakerAccess", "RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE"})
 public class RabbitMqBuilder extends Builder implements SimpleBuildStep {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RabbitMqBuilder.class);
