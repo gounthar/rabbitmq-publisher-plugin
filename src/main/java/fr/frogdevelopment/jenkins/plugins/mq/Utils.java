@@ -97,11 +97,7 @@ abstract class Utils {
                         }
 
                         LOGGER.info("\t- " + paramKey + "=" + paramValue);
-                        if (paramValue != null) {
-                            jsonObject.put(toJava(paramKey), paramValue);
-                        } else {
-                            jsonObject.put(toJava(paramKey), "null");
-                        }
+                        jsonObject.put(toJava(paramKey), "null".equals(paramValue) ? null : paramValue);
                     } else {
                         LOGGER.info("\t- Empty key for line : {}", line);
                         hasError = true;
